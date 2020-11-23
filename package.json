@@ -1,0 +1,13 @@
+{
+  "name": "angular-lib-injector-bug",
+  "version": "1.0.0",
+  "description": "Setup Wrapper",
+  "scripts": {
+    "app:serve": "cd app; npm run start",
+    "lib:build": "cd lib-project; npm run build; cd ..",
+    "setup:library": "cd lib-project; npm install; cd ..",
+    "setup:app": "cd app; npm install; cd ..",
+    "setup:initial": "npm run setup:library; npm run lib:build; npm run setup:app"
+  },
+  "author": "fabiryn"
+}
